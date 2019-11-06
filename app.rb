@@ -7,7 +7,11 @@ class App < Sinatra::Base
   end
 
   post '/' do
+<<<<<<< HEAD
     @analyzed_text = TextAnalyzer.new(params[:user_text])
+=======
+
+>>>>>>> 2089754c7fcac8b1a1bf4f9f380126fbbff0e5f8
 
     erb :results
   end

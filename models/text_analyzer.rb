@@ -32,11 +32,23 @@ class TextAnalyzer
     biggest = { arr2.keys.first => arr2.values.first }
 
     arr2.each do |key, value|
+<<<<<<< HEAD
       if value > biggest.values.first
         biggest = {}
         biggest[key] = value
       end
     end
+=======
+         if value > biggest.values[1]
+           biggest = {
+             :most_used_letter => "",
+             :letter_count => ""
+           }
+           biggest[:most_used_letter] = key
+           biggest[:letter_count] = value
+         end
+       end
+>>>>>>> 2089754c7fcac8b1a1bf4f9f380126fbbff0e5f8
 
     biggest
   end
